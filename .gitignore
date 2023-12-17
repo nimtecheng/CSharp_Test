@@ -33,6 +33,7 @@
 
 # WPF
 **/.vs/
+**/obj/
 *.sln
 *.csproj
 *.baml
