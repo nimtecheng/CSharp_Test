@@ -1,0 +1,29 @@
+﻿<Window x:Class="testResource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prop="clr-namespace:testResource.Properties"
+        xmlns:local="clr-namespace:testResource"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <TextBlock x:Key="res1" Text="海上生明月"/>
+        <TextBlock x:Key="res2" Text="海上生明月"/>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+        <StackPanel>
+            <Button Margin="5,5,5,0" Content="{StaticResource res1}"/>
+            <Button Margin="5,5,5,0" Content="{DynamicResource res2}"/>
+            <Button Margin="5,5,5,0" Content="Update" Click="Button_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+                <TextBlock Margin="5,5,5,0" Text="{x:Static prop:Resources.UserName}"/>
+                <TextBlock Margin="5,5,5,0" x:Name="textBlockPassword"/>
+ 
+            
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
