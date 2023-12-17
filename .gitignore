@@ -32,7 +32,7 @@
 *.app
 
 #WPF
-**./.vs/
+**/.vs/
 *.sln
 *.csproj
 *.baml
